@@ -60,9 +60,12 @@
 
 .catalog__content {
     margin-top: 60px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     flex-wrap: wrap;
+    &_active {
+        display: flex;
+    }
 
 }
 
@@ -87,6 +90,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 25px;
+        text-align: center;
     }
     &__dscr {
         margin-top: 15px;
@@ -94,12 +98,14 @@
         font-size: 14px;
         line-height: 22px;
         color: #0D0D0D;
+        text-align: center;
     }
     &__link {
         display: block;
         margin-top: 10px;
         font-weight: 500;
         font-size: 14px;
+        text-align: center;
         text-decoration-line: underline;
         color: #C70101;
             &:hover {
@@ -140,7 +146,7 @@
         border-radius: 5px;
         font-weight: 500;
         font-size: 14px;
-        line-height: 36px;
+        line-height: 40px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
