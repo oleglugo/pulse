@@ -1,5 +1,6 @@
 .catalog {
 
+
     &__title {
         margin-bottom: 46px;
         font-weight: 400;
@@ -108,8 +109,9 @@
         text-align: center;
         text-decoration-line: underline;
         color: #C70101;
+        transition: color .3s linear;
             &:hover {
-                color: #C70101;
+                color: #880e0e;
             }
     }
 
@@ -151,6 +153,12 @@
         text-transform: uppercase;
         color: #FFFFFF;
         cursor: pointer;
+        transition: background 0.3s linear;
+        transition: border-radius .2s linear;
+            &:hover {
+            background: #880e0e;
+            border-radius:50%;
+                        }
     }
 
     &__wrapper {
@@ -212,11 +220,16 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-
+        text-decoration: none;
         text-decoration-line: underline;
         text-transform: uppercase;
 
         color: #C70101;
+
+        transition: color .3s linear;
+            &:hover {
+                color: #880e0e;
+            }
 
 
     }
