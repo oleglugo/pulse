@@ -25,54 +25,51 @@
 
             <div class="header__contacts">
                 <a href="tel:+74999228774" class="header__phone">+7 (499) 922-89-74</a>
-                <button class="btn header__btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                <button data-modal="consultation" class="btn header__btn">ЗАКАЗАТЬ ЗВОНОК</button>
             </div>
 
         </div> <!-- header__inner -->
 
+        <div class="header__wrapper">
+            <h1 class="header__title">
+                ПОДБОР ПУЛЬСОМЕТРА
+            </h1>
 
+            <h2 class="header__subtitle">
+                С УЧЁТОМ ВАШЕГО УРОВНЯ ПОДГОТОВКИ
+            </h2>
 
-            <div class="header__wrapper">
-
-                <h1 class="header__title">
-                    ПОДБОР ПУЛЬСОМЕТРА
-                </h1>
-
-                <h2 class="header__subtitle">
-                    С УЧЁТОМ ВАШЕГО УРОВНЯ ПОДГОТОВКИ
-                </h2>
-
-                <div class="header__items">
-                    <div class="header__item">
-                        <img src="icons/019_timer_time_stopwatch_2-64.png" class="header__icon" alt="">
-                        Время подбора:<br>
-                        10 минут
-                    </div>
-
-                    <div class="header__item">
-                        <img src="icons/app-08-hand-cart-64.png" class="header__icon" alt="">
-                        Бесплатная
-                        доставка
-                    </div>
-
-                    <div class="header__item">
-                        <img src="icons/messages-64.png" class="header__icon" alt="">
-                        Ответим<br>
-                        на все вопросы
-                    </div>
-
-                </div> <!-- header__items" -->
-
-                <button class="btn header__btn--big">
-                    ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
-                </button>
-
-                <div class="header__or">
-                    или
-                    <a class="catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
+            <div class="header__items">
+                <div class="header__item">
+                    <img src="icons/019_timer_time_stopwatch_2-64.png" class="header__icon" alt="">
+                    Время подбора:<br>
+                    10 минут
                 </div>
 
-            </div> <!-- header__wrapper -->
+                <div class="header__item">
+                    <img src="icons/app-08-hand-cart-64.png" class="header__icon" alt="">
+                    Бесплатная
+                    доставка
+                </div>
+
+                <div class="header__item">
+                    <img src="icons/messages-64.png" class="header__icon" alt="">
+                    Ответим<br>
+                    на все вопросы
+                </div>
+
+            </div> <!-- header__items" -->
+
+            <button data-modal="consultation" class="btn header__btn--big">
+                ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+            </button>
+
+            <div class="header__or">
+                или
+                <a class="catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
+            </div>
+
+        </div> <!-- header__wrapper -->
     </div> <!-- container -->
 </header>
 
@@ -204,7 +201,7 @@
                 <div class="catalog-item__wrapper">
                     <div class="catalog-item__content catalog-item__content_active">
                         <img src="img/31d5430ac1529f7776a58e692e4e92d5.png" alt="pulsometr" class="catalog-item_img">
-                        <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                        <div class="catalog-item__subtitle">Пульсометр Polar FT3</div>
                         <div class="catalog-item__dscr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                         <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                     </div>
@@ -558,6 +555,50 @@
         </div>
 
 </footer>
+
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__dscr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="feed__form feed__form_mt25">
+                <input required name="name" placeholder="Ваше имя" type="tel" class="feed__form__input">
+                <input required name="phone" placeholder="Ваш телефон" type="text"
+                class="feed__form__input">
+                <input required name="phone" placeholder="Ваш E-mail" type="email"
+                class="feed__form__input">
+
+                <button class="btn consultation__btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__dscr">Пульсометр Polar FT1</div>
+            <form action="#" class="feed__form feed__form_mt25">
+                <input required name="name" placeholder="Ваше имя" type="tel" class="feed__form__input">
+                <input required name="phone" placeholder="Ваш телефон" type="text"
+                class="feed__form__input">
+                <input required name="phone" placeholder="Ваш E-mail" type="email"
+                class="feed__form__input">
+
+                <button class="btn consultation__btn">КУПИТЬ</button>
+            </form>
+        </div>
+
+
+        <div class="modal modal_mini" id="ty">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__dscr">Наш менеджер свяжется с вами
+                <br> в ближайшее время!</div>
+        </div>
+
+    </div> <!-- /overlay -->
 
 
 
