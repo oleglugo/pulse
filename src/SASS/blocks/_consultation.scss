@@ -5,7 +5,7 @@
     background: url("../img/bg2.jpg") center center/cover no-repeat;
 
     &__title {
-        margin-bottom: 72px;
+        margin-bottom: 10px;
         font-weight: 700;
         font-size: 36px;
         line-height: 43px;
@@ -36,6 +36,17 @@
             background: #880e0e;
         }
 
+    }
+
+    .error {
+        border: 1px solid red;
+        margin-bottom: 17px;
+    }
+
+    label.error {
+        text-align: center;
+        border: none;
+        color: #fff;
     }
 }
 

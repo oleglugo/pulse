@@ -120,11 +120,11 @@
                 Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 мину
             </div>
-                <form action="#" class="feed__form">
-                    <input required name="name" placeholder="Ваше имя" type="name" class="feed__form__input">
-                    <input required name="phone" placeholder="Ваш телефон" type="tel"
+                <form id="consultation-form" action="#" class="feed__form">
+                    <input name="name" placeholder="Ваше имя" type="text" class="feed__form__input">
+                    <input name="phone" placeholder="Ваш телефон" type="tel"
                     class="feed__form__input">
-                    <input required name="email" placeholder="Ваш E-mail" type="email"
+                    <input name="email" placeholder="Ваш E-mail" type="email"
                     class="feed__form__input">
 
                     <button class="btn consultation__btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
@@ -563,10 +563,10 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__dscr">и мы перезвоним вам в течении 10 минут</div>
             <form action="#" class="feed__form feed__form_mt25">
-                <input required name="name" placeholder="Ваше имя" type="tel" class="feed__form__input">
-                <input required name="phone" placeholder="Ваш телефон" type="text"
+                <input name="name" placeholder="Ваше имя" type="text" class="feed__form__input">
+                <input name="phone" placeholder="Ваш телефон" type="tel"
                 class="feed__form__input">
-                <input required name="phone" placeholder="Ваш E-mail" type="email"
+                <input name="email" placeholder="Ваш E-mail" type="email"
                 class="feed__form__input">
 
                 <button class="btn consultation__btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
@@ -580,11 +580,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__dscr">Пульсометр Polar FT1</div>
             <form action="#" class="feed__form feed__form_mt25">
-                <input required name="name" placeholder="Ваше имя" type="tel" class="feed__form__input">
-                <input required name="phone" placeholder="Ваш телефон" type="text"
-                class="feed__form__input">
-                <input required name="phone" placeholder="Ваш E-mail" type="email"
-                class="feed__form__input">
+                <input name="name"  placeholder="Ваше имя" type="text" class="feed__form__input">
+                <input name="phone" placeholder="Ваш телефон" type="tel" class="feed__form__input">
+                <input name="email" placeholder="Ваш E-mail" type="email" class="feed__form__input">
 
                 <button class="btn consultation__btn">КУПИТЬ</button>
             </form>
@@ -600,23 +598,12 @@
 
     </div> <!-- /overlay -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js">
 </script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>

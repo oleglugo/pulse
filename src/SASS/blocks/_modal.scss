@@ -46,6 +46,17 @@
         min-height: 140px;
     }
 
+    .error {
+        border: 1px solid red;
+
+        margin-bottom: 17px;
+    }
+
+    label.error {
+        text-align: center;
+        border: none;
+    }
+
 }
 
 #consultation, #order, #ty {
