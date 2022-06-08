@@ -2,9 +2,21 @@
     padding: 81px 0;
     &__inner {
         position: relative;
-        width: 750px;
+        width: 100%;
+        max-width: 750px;
         margin: 0 auto;
         }
+
+     &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+     }
+
+     ul.catalog__tabs {
+         padding: 0;
+     }
+
 .slick-prev {
     position: absolute;
     top: 50%;

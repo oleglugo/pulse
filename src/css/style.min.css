@@ -2,11 +2,16 @@
   font-family: "MuseoSansCyrl";
 }
 
+ul {
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
 .container {
+  width: 100%;
   max-width: 950px;
   margin: 0 auto;
 }
@@ -349,8 +354,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel__inner {
   position: relative;
-  width: 750px;
+  width: 100%;
+  max-width: 750px;
   margin: 0 auto;
+}
+
+.carousel__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel ul.catalog__tabs {
+  padding: 0;
 }
 
 .carousel .slick-prev {
@@ -886,6 +902,74 @@ h1, h2, h3, h4, h5, h6 {
   .header__btn--big {
     margin-bottom: 30px;
   }
+  /* ================= benefits ======================== */
+  .benefits__item {
+    width: 33.333%;
+    padding: 0 5px;
+  }
+  /* ============================ consultation =============================*/
+  .consultation {
+    padding: 100px 10px 92px 15px;
+  }
+  .consultation__title {
+    font-size: 37px;
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* =========================header ======================= */
+  .header__brand {
+    font-size: 12px;
+  }
+  .header__brand-style {
+    font-size: 16px;
+  }
+  .header__phone {
+    font-size: 16px;
+  }
+  /* ================= benefits ======================== */
+  .benefits__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .benefits__item {
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: inherit;
+  }
+  .benefits__wrap {
+    padding-left: 21px;
+  }
+  .benefits__icon {
+    margin: 0;
+  }
+  .benefits__title {
+    font-size: 25px;
+  }
+  .benefits__subtitle {
+    margin-bottom: 10px;
+  }
+  /*==================== consultation =============*/
+  .consultation__title {
+    text-align: center;
+  }
+  .consultation__dscr {
+    text-align: center;
+  }
+  .feed__form {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -903,10 +987,70 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header__title {
     font-size: 37px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .header__subtitle {
     font-size: 20px;
+  }
+  .header__phone {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 26px;
+    height: 14px;
+    z-index: 1;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-bottom: 3px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  /*============= consultation ===============*/
+  .consultation__title {
+    font-size: 23px;
+    line-height: 33px;
+  }
+  .consultation__dscr {
+    font-size: 17px;
+  }
+  /* ================= catalog ================== */
+}
+
+@media (max-width: 575px) {
+  .header {
+    padding: 55px 5px 20px 5px;
+  }
+  .header__wrapper {
+    margin-top: 40px;
+  }
+  .header__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__title {
+    font-size: 37px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .header__subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+  .header__items {
+    width: 100%;
+    max-width: 425px;
+    padding: 0 10px;
   }
   .header__or {
     display: none;

@@ -14,6 +14,9 @@ $(document).ready(function(){
 
 
 
+
+
+
       function toggleSlide(item) {
         $(item).each(function(i) {
             $(this).on('click', function(e) {

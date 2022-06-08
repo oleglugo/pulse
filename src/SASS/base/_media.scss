@@ -33,10 +33,92 @@
         margin-bottom:30px;
     }
 
+    /* ================= benefits ======================== */
+
+    .benefits__item {
+        width: 33.333%;
+        padding: 0 5px;
+    }
+
+    /* ============================ consultation =============================*/
+
+    .consultation {
+        padding: 100px 10px 92px 15px;
+    }
+
+    .consultation__title {
+        font-size: 37px;
+        margin-bottom:14px;
+    }
 }
 
 
 @media (max-width:768px) {
+
+    /* =========================header ======================= */
+
+    .header__brand {
+        font-size: 12px;
+    }
+
+    .header__brand-style {
+        font-size: 16px;
+    }
+
+    .header__phone {
+        font-size: 16px;
+    }
+
+    /* ================= benefits ======================== */
+
+    .benefits__wrapper {
+        flex-wrap: wrap;
+        padding: 0 10px;
+        justify-content: center;
+    }
+
+    .benefits__item {
+        margin-bottom: 15px;
+        display: flex;
+        align-items:center;
+        width: 100%;
+        text-align: inherit;
+    }
+
+    .benefits__wrap {
+        padding-left: 21px;
+
+    }
+
+    .benefits__icon {
+        margin: 0;
+
+    }
+
+    .benefits__title {
+        font-size: 25px;
+    }
+
+    .benefits__subtitle {
+        margin-bottom:10px;
+    }
+
+
+    /*==================== consultation =============*/
+
+    .consultation__title {
+        text-align: center;
+    }
+
+    .consultation__dscr {
+        text-align: center;
+    }
+
+    .feed__form {
+        margin: 0 auto;
+    }
+
+
 
 
 }
@@ -60,20 +142,18 @@
 
      .header__title {
          font-size: 37px;
-         margin-bottom: 40px;
+         margin-bottom: 10px;
      }
 
      .header__subtitle {
         font-size: 20px;
      }
 
-     .header__or {
-         display: none;
-     }
 
 
 
-     .header__phone, .header__brand {
+
+     .header__phone {
          display: none;
      }
 
@@ -98,10 +178,98 @@
         }
     }
 
+
+    /*============= consultation ===============*/
+
+    .consultation__title {
+        font-size: 23px;
+        line-height: 33px;
+    }
+
+    .consultation__dscr {
+        font-size: 17px;
+    }
+
+
+
+    /* ================= catalog ================== */
+
+
+
+
+
+
 }
 
-@media (min-width:575px) {
+@media (max-width:575px) {
+    .header {
+        padding: 55px 5px 20px 5px;
+    }
+
+    .header__wrapper {
+        margin-top: 40px;
+    }
+
+    .header__inner {
+       justify-content: center;
+    }
+
+    .header__title {
+        font-size: 37px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .header__subtitle {
+       font-size: 20px;
+       text-align: center;
+    }
+
+    .header__items {
+        width: 100%;
+        max-width: 425px;
+        padding: 0 10px;
+    }
+
+
+    .header__or {
+        display: none;
+    }
+
+
+
+    .header__phone, .header__brand {
+        display: none;
+    }
+
+
+
+   .hamburger {
+       display: block;
+       position: absolute;
+       right: 10px;
+       top: 30px;
+       transform: translateY(-50%);
+       width: 26px;
+       height: 14px;
+       z-index: 1;
+       span {
+           display: block;
+           height: 2px;
+           width: 100%;
+           background-color: #FFFFFF;
+           margin-bottom: 3px;
+           transition: 0.5s all;
+       }
+   }
+
+
 
 
 }
+
+
+
+
+
 
