@@ -1,6 +1,8 @@
 * {
     font-family: "MuseoSansCyrl";
+    scroll-behavior: smooth;
 }
+
 ul {
     padding: 0;
 }
@@ -9,6 +11,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+
+
 .container {
     width: 100%;
     max-width: 950px;
@@ -16,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Base =============== */
-
+@import "base/animations.scss";
 @import "base/mixins.scss";
 @import "base/vars.scss";
 
@@ -31,11 +35,9 @@ h1, h2, h3, h4, h5, h6 {
 @import "blocks/reviews.scss";
 @import "blocks/footer.scss";
 @import "blocks/modal.scss";
-
-
+@import "blocks/pageup.scss";
 
 /* Media ======================== */
-
 @import "base/media.scss";
 
 
