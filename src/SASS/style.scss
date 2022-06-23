@@ -19,6 +19,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+/*Libs============*/
+@import "libs/bootstrap-reboot.min";
+@import "libs/fonts";
+@import "libs/slick";
+@import "libs/animate.min";
+
 /* Base =============== */
 @import "base/animations.scss";
 @import "base/mixins.scss";
